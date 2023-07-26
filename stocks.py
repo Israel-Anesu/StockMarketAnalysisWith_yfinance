@@ -7,7 +7,7 @@ tickerSymbol = 'AAPL'
 # Get data on the ticker
 tickerData = yf.Ticker(tickerSymbol)
 
-# Get the historical prices for this ticker
+# Get the historical prices for the ticker
 tickerDf = tickerData.history(period='1d', start='2010-1-1', end='2023-1-1')
 
 # Calculate the 50-day moving average
